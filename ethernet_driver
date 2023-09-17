@@ -1,0 +1,7 @@
+I was trying to install a new realtek driver for my laptop, so I went to the realtek official website and install one.
+But it isn't suitable for the linux kernel version or something else error, then my LAN driver crashed (it had been deleted).
+So the solution is 
+```
+  lspci    # check the Ethernet hardware id
+  sudo apt-get install r8168-dkms
+```
