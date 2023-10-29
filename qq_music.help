@@ -1,0 +1,7 @@
+###ERROR:
+  FATAL:gpu_data_manager_impl_private.cc(1034)] The display compositor is frequently crashing. Goodbye.
+追踪与中断点陷阱 (核心已转储)
+###Solution:
+    ./qqmusic-1.1.5.AppImage --no-sandbox
+    add ` --no-sandbox ` option, then it works.
+    reference:  https://github.com/kiibohd/configurator/issues/210
