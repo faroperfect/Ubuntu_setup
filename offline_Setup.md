@@ -1,6 +1,6 @@
 ### Step.1 recursively get the dependencies.  
 <https://stackoverflow.com/questions/22008193/how-to-list-download-the-recursive-dependencies-of-a-debian-package>  
-
+apt-cache depends --recurse --no-recommends --no-suggests --no-conflicts --no-breaks --no-replaces --no-enhances <your-package-here> | grep "^\w" | sort -u  
 Be attention, this list contains "apt-offline" it self. remove its name if u want to use Step.2.  
 
 
