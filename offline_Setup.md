@@ -98,4 +98,5 @@ zlib1g `
 
 ### By the way, there is a problem when I try to download the files of Ubuntu in mirror site.  
 `https://askubuntu.com/questions/1279002/what-is-the-difference-between-suite-and-suite-security-repositories-in-apt`  
-according to this 
+according to this answer, the most convinent approach is use the only "focal" version. It is the basic version and have the full dependencies itself needs.  
+
