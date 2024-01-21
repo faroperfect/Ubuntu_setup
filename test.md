@@ -1,6 +1,8 @@
 gcc-12-base
-libbz2-1.0
+libacl1
 libc6
 libcrypt1
 libgcc-s1
-unzip
+libpcre2-8-0
+libselinux1
+tar0
