@@ -22,3 +22,5 @@ Then just copy that folder (all .deb + the Packages.gz file) to the target syste
   
 $ echo "deb file:<your folder here> ./" | sudo tee -a /etc/apt/sources.list  
 $ sudo apt-get update  
+I have some trouble understanding the `echo "deb file:<your folder here> ./" | sudo tee -a /etc/apt/sources.list  ` command, so instead I just need to `sudo dpkg -i ./*.deb`. XP  
+Then when I run the final `sudo dpkg -i apt-offline****` it works without internet. (I just plug out the cable)  
