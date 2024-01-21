@@ -1,3 +1,4 @@
+autotools-dev
 debianutils
 dpkg
 gcc-12-base
