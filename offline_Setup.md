@@ -12,3 +12,13 @@ according to this answer, the most convinent approach is use the only "focal" ve
 `apt-get download <Step1 dependencies' name without itself's name>`  
 use `apt-get` but not `sudo apt-get`.  
 
+## Optionally, to install those dependencies  
+This extends slightly the asked question, but it seems to match the intent of the question.  
+  
+You need to build the index of the just downloaded packages. This is done from the same folder where all .deb where downloaded:  
+  
+$ dpkg-scanpackages . | gzip -9c > Packages.gz  
+Then just copy that folder (all .deb + the Packages.gz file) to the target system which does not have Internet access and add the folder to the APT source list.  
+  
+$ echo "deb file:<your folder here> ./" | sudo tee -a /etc/apt/sources.list  
+$ sudo apt-get update  
