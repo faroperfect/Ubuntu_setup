@@ -1,4 +1,4 @@
-### Obviously, a offline  install method is nesessary.  
+### Step.1 Obviously, a offline  install method is nesessary.  
 I choose apt-offline. According to <https://stackoverflow.com/questions/22008193/how-to-list-download-the-recursive-dependencies-of-a-debian-package> the highest score answer, use this command below to recursively get the dependencies of it.  
 `apt-cache depends --recurse --no-recommends --no-suggests --no-conflicts --no-breaks --no-replaces --no-enhances <your-package-here> | grep "^\w" | sort -u`  
 It needs so many dependencies below:  
@@ -95,6 +95,7 @@ readline-common
 tar
 ubuntu-keyring
 zlib1g `  
+Be attention, this list contains "apt-offline" it self. remove its name if u want to use Step.2.  
 
 ### By the way, there is a problem when I try to download the files of Ubuntu in mirror site.  
 `https://askubuntu.com/questions/1279002/what-is-the-difference-between-suite-and-suite-security-repositories-in-apt`  
