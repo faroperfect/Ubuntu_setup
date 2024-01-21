@@ -1,3 +1,5 @@
+autoconf
+automake
 autotools-dev
 debianutils
 dpkg
