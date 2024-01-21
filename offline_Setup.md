@@ -1,5 +1,6 @@
-### Step.1 
-<https://stackoverflow.com/questions/22008193/how-to-list-download-the-recursive-dependencies-of-a-debian-package>
+### Step.1 recursively get the dependencies.  
+<https://stackoverflow.com/questions/22008193/how-to-list-download-the-recursive-dependencies-of-a-debian-package>  
+
 Be attention, this list contains "apt-offline" it self. remove its name if u want to use Step.2.  
 
 
