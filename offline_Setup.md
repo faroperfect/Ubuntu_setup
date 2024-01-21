@@ -96,3 +96,6 @@ tar
 ubuntu-keyring
 zlib1g `  
 
+### By the way, there is a problem when I try to download the files of Ubuntu in mirror site.  
+`https://askubuntu.com/questions/1279002/what-is-the-difference-between-suite-and-suite-security-repositories-in-apt`  
+according to this 
