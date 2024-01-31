@@ -48,6 +48,7 @@ mime-support
 perl
 perl-base
 perl-modules-5.34
+python-is-python3
 python3
 python3-minimal
 python3.10
